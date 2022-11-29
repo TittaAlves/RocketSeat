@@ -65,7 +65,7 @@ Introdução ao HTML e CSS.
 
 ### **Projeto 1**
 
-![Projeto final de um site de móveis](final_projeto1.png)
+![Projeto final de um site de móveis](imagens/final_projeto1.png)
 
 ---
 Conhecendo novos conceitos de HTML e CSS.
@@ -86,7 +86,7 @@ Conhecendo novos conceitos de HTML e CSS.
 
 ### **Projeto 2**
 
-![Projeto final do site de academia treine.me](final_projeto2.png)
+![Projeto final do site de academia treine.me](imagens/final_projeto2.png)
 
 ---
 ### **Projeto 3**
@@ -95,4 +95,4 @@ Desafio avançado
 <br>
 Nesse desafio tive que recriar uma aplicação, a partir do layout disponível no Figma, para treinar tudo que foi passado no Stage 2. 
 
-![foto do projeot final sobre uma empresa de segurança de computação](final_projeto3.png)
+![foto do projeot final sobre uma empresa de segurança de computação](imagens/final_projeto3.png)
