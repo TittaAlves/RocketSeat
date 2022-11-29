@@ -5,13 +5,13 @@
 Ínicio da Missão:
 Foi apresentado tudo que será abordado no curso do Explorer.
 
-◼ Mapa da Jornada;
+⬜ Mapa da Jornada;
 <br>
-◼ Alinhamento da mentalidade;
+⬜ Alinhamento da mentalidade;
 <br>
-◼ Explicação sobre discord e fórum;
+⬜ Explicação sobre discord e fórum;
 <br>
-◼ Dicas de ex alunos;
+⬜ Dicas de ex alunos;
 <br>
 
 ## 📍 **Stage 1**
@@ -37,13 +37,13 @@ Conceitos básicos da programação.
 
 Objetivos e Planejamentos.
 
-◼ Encontrando propósito;
+⬜ Encontrando propósito;
 <br>
-◼ Fortalecendo o propósito;
+⬜ Fortalecendo o propósito;
 <br>
-◼ Objetivos e Metas;
+⬜ Objetivos e Metas;
 <br>
-◼ Ajustando a mentalidade;
+⬜ Ajustando a mentalidade;
 
 ### **Desafio**
 Qual meu propósito e meus objetivos.
