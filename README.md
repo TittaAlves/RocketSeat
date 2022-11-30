@@ -96,3 +96,23 @@ Desafio avançado
 Nesse desafio tive que recriar uma aplicação, a partir do layout disponível no Figma, para treinar tudo que foi passado no Stage 2. 
 
 ![foto do projeot final sobre uma empresa de segurança de computação](imagens/final_projeto3.png)
+
+---
+
+## 📌 **Land 3**
+
+Aprendizado, Estudos e Técnicas.
+
+⬜ Cronograma de estudo com Notion;
+<br>
+⬜ Potencializando o aprendizado;
+<br>
+⬜ Estudando de maneira eficiente;
+<br>
+⬜ Técnica Pomodoro;
+<br>
+⬜ Ténica Lozanov;
+<br>
+⬜ Técnica Feynmann;
+<br>
+⬜ Técnica Active Recall;
