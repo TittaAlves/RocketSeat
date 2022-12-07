@@ -98,6 +98,14 @@ Nesse desafio tive que recriar uma aplicação, a partir do layout disponível n
 ![foto do projeot final sobre uma empresa de segurança de computação](imagens/final_projeto3.png)
 
 ---
+### **Projeto 4**
+
+Desafio extra
+<br>
+Recriar um site de layout disponibilizado no FIgma, para treino. 
+
+![foto do projeto de uma empresa de viagens](imagens/final_projeto_extra.png)
+---
 
 ## 📌 **Land 3**
 
@@ -116,3 +124,38 @@ Aprendizado, Estudos e Técnicas.
 ⬜ Técnica Feynmann;
 <br>
 ⬜ Técnica Active Recall;
+
+
+## 📍 **Stage 3**
+
+Formulários, Validações e Customizações
+
+⚪ Visão geral do projeto;
+<br>
+⚪ Entendendo os campos HTML;
+<br>
+⚪ Como funcionam os formulários no HTML;
+<br>
+⚪ Simulando a busca do google;
+<br>
+⚪ Iniciando a estrutura do HTML e configurações do VSCode;
+<br>
+⚪ Iniciando os estilos da página;
+<br>
+⚪ Agrupando campos com fieldset e legend;
+<br>
+⚪ Formatando o campo de texto;
+<br>
+⚪ Ajustando novos campos dentro do fieldset;
+<br>
+⚪ Estilizando o campo select;
+<br>
+⚪ Aplicando estilos aos agrupamentos restantes;
+<br>
+⚪ Checkbox customizado e com acessibilidade;
+<br>
+⚪ Criando estilos para o submit;
+<br>
+⚪ Validando cmapos e submetendo formulários;
+<br>
+⚪ Criando Formulários;
