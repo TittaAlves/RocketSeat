@@ -164,7 +164,6 @@ fieldset legend {
 }
 
 .checkbox-wrapper label::before {
-
     content: "";
     width: 24px;
     height: 24px;
