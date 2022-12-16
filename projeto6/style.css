@@ -1,5 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Poppins' sans-serif;
+    font-family: Poppins, sans-serif;
     background: #EFEFEF;
     color:#535971;
 }
@@ -21,29 +27,43 @@ body::before {
 }
 
 header {
-    width: 319px;
-    margin-top: 74px;
+    max-width: 417px;
+    margin-top: 60px;
 }
 
 header h1 {
-    font-family: 'Staatliches', sans-serif;
+    font-family: Staatliches, sans-serif;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 48px;
     line-height: 42px;
     color: white;
     text-transform: uppercase;
+    margin-bottom: 18px;
 }
 
 header p {
-    line-height: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 20px;
     color: white;
+}
+
+h2 {
+    font-family: Staatliches, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: #535971;
+    margin-bottom: 8px;
 }
 
 form {
     margin-top: 38px;
-    background:#FAFAFC ;
+    background: #ffffff;
     min-height: 300px;
-    border-radius: 8px;
+    border-radius: 20px 20px 0 0;
+    padding: 64px;
 
 }
 
@@ -52,7 +72,7 @@ fieldset {
 }
 
 fieldset legend {
-    font-family: 'Staatliches' sans-serif;
+    font-family: Staatliches, sans-serif;
     text-transform: uppercase;
     color: #535971;
     font-weight: 400;
@@ -60,12 +80,29 @@ fieldset legend {
     line-height: 34px;
     width: 100%;
     padding-bottom: 16px;
+    margin-bottom: 36px;
     border-bottom: 1px solid #E6E6F0;
 }
+
+input[type="date"], 
+input[type="time"] {
+   appearance: none;
+   -webkit-appearance: none;
+} 
 
 .input-wrapper {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+fieldset .input-wrapper:last-child {
+    margin-bottom: 30px;
+}
+
+fieldset .field-group .input-wrapper {
+    margin-bottom: 0;
 }
 
 .input-wrapper label {
@@ -85,4 +122,24 @@ fieldset legend {
 .input-wrapper label span:hover {
     color: #5c6a71;
 
+}
+
+.input-wrapper input {
+    width: 100%;
+    height: 56px;
+    padding: 0 15px;
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+}
+
+.field-group {
+    display: flex;
+    height: fit-content;
+    gap: 22px;
+    margin-bottom: 16px;
+}
+
+fieldset .field-group:last-child {
+    margin-bottom: 30px;
 }

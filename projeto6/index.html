@@ -7,8 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avalie sua mentoria</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -21,14 +21,17 @@
         <form>
             <fieldset>
                 <legend>Informações Pessoais</legend>
-                <div class="input-wrapper">
-                    <label for="name">Nome</label>
-                    <input type="text" id="name" required />
+                <div class="field-group">
+                    <div class="input-wrapper">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" required />
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="last-name">Sobrenome</label>
+                        <input type="text" id="last-name" required />
+                    </div>
                 </div>
-                <div class="input-wrapper">
-                    <label for="last-name">Título do evento</label>
-                    <input type="text" id="last-name" required />
-                </div>
+
                 <div class="input-wrapper">
                     <label for="email">Email<span>(digite um email válido)</span></label>
                     <input type="text" id="email" required />
@@ -37,6 +40,7 @@
                     <label for="password">Senha<span>(mínimo 6 caracteres)</span></label>
                     <input type="password" id="password" required minlength="6" />
                 </div>
+
             </fieldset>
 
             <fieldset>
@@ -50,6 +54,7 @@
             <fieldset>
                 <legend>Seus horários disponíveis</legend>
                 <h2>Primeira Mentoria</h2>
+                <div class="field-group">
                 <div class="input-wrapper">
                     <label for="date">Data<span>(DD/MM/AAAA)</span></label>
                     <input type="date" id="date" required />
@@ -61,24 +66,30 @@
                 <div class="input-wrapper">
                     <label for="hour">Até</label>
                     <input type="time" id="hour" required />
+                </div>
                 </div>
 
                 <h2>Segunda Mentoria</h2>
-                <div class="input-wrapper">
-                    <label for="date">Data<span>(DD/MM/AAAA)</span></label>
-                    <input type="date" id="date" required />
-                </div>
-                <div class="input-wrapper">
-                    <label for="hour">Das</label>
-                    <input type="time" id="hour" required />
-                </div>
-                <div class="input-wrapper">
-                    <label for="hour">Até</label>
-                    <input type="time" id="hour" required />
+                <div class="field-group">
+                    <div class="input-wrapper">
+                        <label for="date">Data<span>(DD/MM/AAAA)</span></label>
+                        <input type="date" id="date" required />
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="hour">Das</label>
+                        <input type="time" id="hour" required />
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="hour">Até</label>
+                        <input type="time" id="hour" required />
+                    </div>
                 </div>
             </fieldset>
 
         </form>
+        <footer>
+            <button class ="button" fomr="my-form">Salvar</button>
+        </footer>
     </div>
 </body>
 
