@@ -18,27 +18,27 @@
             <h1>Mentoria</h1>
             <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
         </header>
-        <form>
+        <form id="my-form">
             <fieldset>
                 <legend>Informações Pessoais</legend>
                 <div class="field-group">
                     <div class="input-wrapper">
                         <label for="name">Nome</label>
-                        <input type="text" id="name" required />
+                        <input type="text" id="name" required placeholder="name"/>
                     </div>
                     <div class="input-wrapper">
                         <label for="last-name">Sobrenome</label>
-                        <input type="text" id="last-name" required />
+                        <input type="text" id="last-name" required placeholder="last-name"/>
                     </div>
                 </div>
 
                 <div class="input-wrapper">
                     <label for="email">Email<span>(digite um email válido)</span></label>
-                    <input type="text" id="email" required />
+                    <input type="email" id="email" required placeholder="email"/>
                 </div>
                 <div class="input-wrapper">
                     <label for="password">Senha<span>(mínimo 6 caracteres)</span></label>
-                    <input type="password" id="password" required minlength="6" />
+                    <input type="password" id="password" required minlength="6" placeholder="password"/>
                 </div>
 
             </fieldset>
@@ -47,7 +47,7 @@
                 <legend>Informações do Mentor</legend>
                 <div class="input-wrapper">
                     <label for="mentor-name">Nome do seu mentor<span>(só o primeiro nome)</span></label>
-                    <input type="text" id="mentor-name" required />
+                    <input type="text" id="mentor-name" required placeholder="mentor-name" />
                 </div>
             </fieldset>
 
@@ -55,29 +55,29 @@
                 <legend>Seus horários disponíveis</legend>
                 <h2>Primeira Mentoria</h2>
                 <div class="field-group">
-                <div class="input-wrapper">
-                    <label for="date">Data<span>(DD/MM/AAAA)</span></label>
-                    <input type="date" id="date" required />
-                </div>
-                <div class="input-wrapper">
-                    <label for="hour">Das</label>
-                    <input type="time" id="hour" required />
-                </div>
-                <div class="input-wrapper">
-                    <label for="hour">Até</label>
-                    <input type="time" id="hour" required />
-                </div>
+                    <div class="input-wrapper">
+                        <label for="date">Data<span>(DD/MM/AAAA)</span></label>
+                        <input type="date" id="date" required/>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="hour">Das</label>
+                        <input type="time" id="hour" required/>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="hour">Até</label>
+                        <input type="time" id="hour" required/>
+                    </div>
                 </div>
 
                 <h2>Segunda Mentoria</h2>
                 <div class="field-group">
                     <div class="input-wrapper">
                         <label for="date">Data<span>(DD/MM/AAAA)</span></label>
-                        <input type="date" id="date" required />
+                        <input type="date" id="date" required/>
                     </div>
                     <div class="input-wrapper">
                         <label for="hour">Das</label>
-                        <input type="time" id="hour" required />
+                        <input type="time" id="hour" required/>
                     </div>
                     <div class="input-wrapper">
                         <label for="hour">Até</label>
@@ -88,8 +88,9 @@
 
         </form>
         <footer>
-            <button class ="button" fomr="my-form">Salvar</button>
+            <button class="button" form="my-form">Salvar</button>
         </footer>
+
     </div>
 </body>
 

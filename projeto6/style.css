@@ -124,6 +124,19 @@ fieldset .field-group .input-wrapper {
 
 }
 
+.input-wrapper input:not(:placeholder-shown):not(:focus):invalid {
+    border: 1px solid #FF5374;
+}
+
+.input-wrapper input::placeholder {
+    color: transparent;
+}
+
+.input-wrapper input[type="date"]:invalid, 
+.input-wrapper input[type="time"]:invalid {
+    border: 1px solid #E6E6F0 !important;
+}
+
 .input-wrapper input {
     width: 100%;
     height: 56px;
@@ -132,6 +145,7 @@ fieldset .field-group .input-wrapper {
     border: 1px solid #E6E6F0;
     border-radius: 8px;
 }
+
 
 .field-group {
     display: flex;
@@ -142,4 +156,32 @@ fieldset .field-group .input-wrapper {
 
 fieldset .field-group:last-child {
     margin-bottom: 30px;
+}
+
+footer {
+    background:  #535971;
+    border-radius: 0px 0px 20px 20px;
+    width: 100%;
+    height: 160px;
+    left: 345px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+footer .button {
+    background: #FF5374;
+    border-radius: 20px;
+    border: none;
+    width: 608px;
+    height: 55.65px;
+    color: #FFFFFF;
+    font-family: 'Staatliches';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+footer .button:hover {
+    background:#99364a ;
 }
