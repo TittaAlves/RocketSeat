@@ -110,7 +110,7 @@ fieldset legend {
 
 }
 
-.input-wrapper input {
+.input-wrapper input, select, textarea {
     width: 100%;
     height: 56px;
     padding: 0 15px;
