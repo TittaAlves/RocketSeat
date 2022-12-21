@@ -16,72 +16,85 @@
         <header>
             <h1>Avalie a sua mentoria</h1>
             <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
-            <img src="imagens/Vector.png" alt="nuvem de fala rosa">
+            <div class="review">
+                <img src="imagens/Vector.png" alt="nuvem de fala rosa">
+                <div class="stars">
+                    <img src="imagens/estrela-branca.png" alt="estrela branca">
+                    <img src="imagens/estrela-branca.png" alt="estrela branca">
+                    <img src="imagens/estrela-branca.png" alt="estrela branca">
+                    <img src="imagens/estrela-escura.png" alt="estrela preta">
+                    <img src="imagens/estrela-escura.png" alt="estrela preta">
+                </div>
+            </div>
         </header>
-        <article>Informações Pessoais</article>
-        <form id="my-form">
-            <fieldset>
-                <div class="field-group">
-                    <div class="input-wrapper">
-                        <label for="name">Nome</label>
-                        <input type="text" id="name" required />
+        <div class="main-content">
+            <article>Informações Pessoais</article>
+            <form id="my-form">
+                <fieldset>
+                    <div class="field-group">
+                        <div class="input-wrapper">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" required />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="last-name">Sobrenome</label>
+                            <input type="text" id="last-name" required />
+                        </div>
                     </div>
                     <div class="input-wrapper">
-                        <label for="last-name">Sobrenome</label>
-                        <input type="text" id="last-name" required />
+                        <label for="email">Email<span>(digite um email válido)</span></label>
+                        <input type="email" id="email" required />
                     </div>
-                </div>
-                <div class="input-wrapper">
-                    <label for="email">Email<span>(digite um email válido)</span></label>
-                    <input type="email" id="email" required />
-                </div>
-            </fieldset>
+                </fieldset>
 
-            <fieldset>
-                <legend>Informações do Mentor</legend>
-                <div class="input-wrapper">
-                    <label for="mentor-name">Selecione quem foi seu mentor</label>
-                    <select name="mentor-name" id="">
-                        <option value="name">Roberto</option>
-                        <option value="name">Pedro</option>
-                        <option value="name">Juliana</option>
-                        <option value="name">Fabiana</option>
-                    </select>
-                </div>
-                <div class="input-wrapper">
-                    <label for="last-name">Feedback sobre o mentor</label>
-                    <textarea name="text" id="feedback"></textarea>
-                </div>
-                <div class="input-wrapper">
-                    <label for="check">Todas as minhas dúvidas foram esclarecidas durante a mentoria</label>
-                    <input type="checkbox" name="mentoria" id="mentoria" />
-                </div>
-            </fieldset>
-
-
-            <fieldset>
-                <legend>Agendando Próxima Mentoria</legend>
-                <div class="field-group">
+                <fieldset>
+                    <legend>Informações do Mentor</legend>
                     <div class="input-wrapper">
-                        <label for="date">Data<span>(DD/MM/AAAA)</span></label>
-                        <input type="date" id="date" required />
+                        <label for="mentor-name">Selecione quem foi seu mentor</label>
+                        <select name="mentor-name" id="mentor-name">
+                            <option value="name">Roberto</option>
+                            <option value="name">Pedro</option>
+                            <option value="name">Juliana</option>
+                            <option value="name">Fabiana</option>
+                        </select>
                     </div>
                     <div class="input-wrapper">
-                        <label for="hour">Das</label>
-                        <input type="time" id="hour" required />
+                        <label for="last-name">Feedback sobre o mentor</label>
+                        <textarea name="text" id="feedback"></textarea>
                     </div>
                     <div class="input-wrapper">
-                        <label for="hour">Até</label>
-                        <input type="time" id="hour" required />
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" name="mentoria" id="mentoria" />
+                            <label for="check">Todas as minhas dúvidas foram esclarecidas durante a mentoria</label>
+                        </div>
                     </div>
-                </div>
-            </fieldset>
-        </form>
+                </fieldset>
 
-        <footer>
-            <button class="button" form="my-form">Salvar</button>
-        </footer>
 
+                <fieldset>
+                    <legend>Agendando Próxima Mentoria</legend>
+                    <div class="field-group">
+                        <div class="input-wrapper">
+                            <label for="date">Data<span>(DD/MM/AAAA)</span></label>
+                            <input type="date" id="date" required />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="hour">Das</label>
+                            <input type="time" id="hour" required />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="hour">Até</label>
+                            <input type="time" id="hour" required />
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+
+
+            <footer>
+                <button class="button" form="my-form">Salvar</button>
+            </footer>
+        </div>
 
 </body>
 

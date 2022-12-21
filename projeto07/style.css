@@ -13,7 +13,7 @@ body {
 body::before {
     content: '';
     width: 100%;
-    height: 368px;
+    height: 465px;
     background:#293241;
     position: absolute;
     top: 0;
@@ -27,25 +27,35 @@ body::before {
 }
 
 header {
-    max-width: 417px;
-    margin-top: 60px;
+    margin-top: 95px;
+    text-align: center;
 }
 
 header h1 {
     font-family: Staatliches, sans-serif;
     font-weight: 400;
-    font-size: 48px;
-    line-height: 42px;
+    font-size: 36px;
     color: white;
     text-transform: uppercase;
-    margin-bottom: 18px;
+    
 }
 
 header p {
-    line-height: 30px;
     font-weight: 400;
     font-size: 20px;
     color: white;
+    margin-bottom: 30px;
+}
+
+header .review {
+    display: inline-block;
+    position: relative;
+}
+
+header .stars {
+    position: absolute;
+    top: 30px;
+    left: 50px;
 }
 
 h2 {
@@ -58,6 +68,7 @@ h2 {
     margin-bottom: 8px;
 }
 
+
 article {
     background:  #F67669;
     border-radius: 20px 20px 0 0;
@@ -65,7 +76,7 @@ article {
     height: 133px; 
     display: flex;
     justify-content: center;
-    margin-top: 32px;
+    margin-top: 25px;
     align-items: center;
     font-family: Staatliches, sans-serif;
     font-style: normal;
@@ -125,7 +136,48 @@ fieldset legend {
 
 }
 
-.input-wrapper input, select, textarea {
+.input-wrapper-row {
+    margin-top: 30px;
+
+}
+
+.checkbox-wrapper {
+    position: relative;  
+    margin-top: 24px;
+}
+
+.checkbox-wrapper input {
+    position: absolute;   
+    top: 0;
+    left: 0;
+    width: 24px;    
+    height: 24px; 
+    opacity: 0;    
+}
+
+.checkbox-wrapper label::before {
+    content: ""; 
+    width: 24px;
+    height: 24px;
+    border: 1px solid #E6E6F0 ;
+    border-radius: 8px;
+}
+
+.checkbox-wrapper label {
+    display: flex;
+    gap: 16px;       
+}
+.checkbox-wrapper input:focus + label::before {
+    outline: 2px solid black;
+}
+
+.checkbox-wrapper input:checked + label::before {   
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%23F67669'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.input-wrapper input:not(input[type="checkbox"]), select, textarea {
     width: 100%;
     height: 56px;
     padding: 0 15px;
@@ -134,11 +186,23 @@ fieldset legend {
     border-radius: 8px;
 }
 
+.input-wrapper textarea {
+    resize: vertical;
+    max-height: 330px;
+    min-height: 100px;
+    width: 100%;
+    height: 166px;
+}
+
 .field-group {
     display: flex;
     height: fit-content;
     gap: 22px;
     margin-bottom: 16px;
+}
+
+#mentor-name {
+    width: 50%;
 }
 
 footer {
