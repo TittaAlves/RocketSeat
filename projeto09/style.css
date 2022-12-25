@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --ff-heading: 'Epilogue', sans-serif;
+    --ff-texting: 'Open sans', sans-serif;
+
+    --hue: 250;
+    --bg-primary: hsl(var(--hue), 22%, 20%);
+    --fc-primary: hsl(var(--hue), 0%, 100%);
+    --fc-secundary: hsl(var(--hue), 50%, 80%);
+
+    font-size: 62.5%;
+    --fs-body: 1.6rem;
+    --fs-heading: 4rem;
+}
+
+body {
+    font-family: var(--ff-texting);
+    background-color: var(--bg-primary);
+    color: var(--fc-primary);
+    font-size: var(--fs-body)
+}
+
+.page {
+    max-width: 33rem;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    margin: 10rem 0 8rem;
+    font-family: var(--ff-heading);
+    text-align: center;
+    
+}
+
+header p {
+    color: var(--fc-secundary);
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 1.7rem;
+    line-height: 3.2rem;
+}
+
+header h1 {
+    font-size: var(--fs-heading);
+    font-weight: 800;
+    line-height: 4.8rem;
+}
+
+.cards {
+    position: relative;
+}
+
+.cards img {
+    height: 41.6rem;
+    object-fit: cover;
+}
+
+.cards h2 {
+    position: absolute;
+    bottom: 5.2rem;
+    left: 2.8rem;
+}
