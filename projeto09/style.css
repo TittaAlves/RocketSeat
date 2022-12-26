@@ -73,6 +73,12 @@ main {
     height: 41.6rem;
     object-fit: cover;
     border-radius: .6rem;
+    transition: all 200ms;
+}
+
+.cards img:hover {
+    transform: scale(1.1);
+    opacity: 0.4;
 }
 
 .cards h2 {
@@ -97,4 +103,42 @@ main {
     height: 3.8rem;
     display: inline-flex;
     align-items: center;
+}
+
+p {
+    animation: topdown 300ms;
+}
+
+h1 {
+    animation: topdown 1000ms;
+}
+
+.cards {
+    animation: downtop 1500ms;
+    animation-direction: reverse;
+}
+
+
+@keyframes topdown {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes downtop {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
