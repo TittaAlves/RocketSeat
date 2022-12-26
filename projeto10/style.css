@@ -77,6 +77,12 @@ main {
     line-height: 3.4rem;
 }
 
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
 .card {
     position: relative;
     font-family: var(--ff-heading);
@@ -84,7 +90,6 @@ main {
 
 
 .card img {
-    height: 41.6rem;
     object-fit: cover;
     border-radius: .6rem;
     transition: all 200ms;
