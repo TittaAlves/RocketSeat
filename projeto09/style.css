@@ -17,7 +17,8 @@
 
     font-size: 62.5%;
     --fs-body: 1.6rem;
-    --fs-heading: 4rem;
+    --fs-heading: clamp(4rem, 1rem +5vw, 5.6rem);
+    --fs-heading-sm: clamp(3rem, 0.5rem +3vw, 4rem);
 }
 
 body {
@@ -28,9 +29,12 @@ body {
 }
 
 .page {
-    max-width: 33rem;
+    max-width: clamp(33rem, 30rem + 60vw, 117rem);
+    padding: 0 5rem;
     margin: 0 auto;
 }
+
+
 
 img {
     width: 100%;
@@ -51,12 +55,16 @@ header p {
     letter-spacing: 3px;
     margin-bottom: 1.7rem;
     line-height: 3.2rem;
+
+    animation: topdown 300ms;
 }
 
 header h1 {
     font-size: var(--fs-heading);
     font-weight: 800;
     line-height: 4.8rem;
+
+    animation: topdown 1000ms;
 }
 
 main {
@@ -67,11 +75,15 @@ main {
 .cards {
     position: relative;
     font-family: var(--ff-heading);
+
+    animation: downtop 1500ms;
+    animation-direction: reverse;
 }
 
 .cards img {
     height: 41.6rem;
     object-fit: cover;
+    filter: brightness(0.6) saturate(1.6);
     border-radius: .6rem;
     transition: all 200ms;
 }
@@ -85,7 +97,7 @@ main {
     position: absolute;
     bottom: 5.2rem;
     left: 2.8rem;
-    font-size: var(--fs-heading);
+    font-size: var(--fs-heading-sm);
     font-weight: 800;
     display: flex;
     flex-direction: column;
@@ -104,20 +116,6 @@ main {
     display: inline-flex;
     align-items: center;
 }
-
-p {
-    animation: topdown 300ms;
-}
-
-h1 {
-    animation: topdown 1000ms;
-}
-
-.cards {
-    animation: downtop 1500ms;
-    animation-direction: reverse;
-}
-
 
 @keyframes topdown {
     0% {
@@ -140,5 +138,42 @@ h1 {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (min-width: 700px) {
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media (min-width: 930px) {
+    :root {
+        --fs-heading:5.6rem;
+    }
+
+    .page {
+        max-width: 117rem;
+        padding: 0 5rem;
+    }
+
+    main {
+        grid-template-areas: "A B B"
+        "C C D";
+    }
+
+    main div:nth-child(1) {
+        grid-area: A;
+    }
+    main div:nth-child(2) {
+        grid-area: B;
+    }
+    main div:nth-child(3) {
+        grid-area: C;
+    }
+    main div:nth-child(4) {
+        grid-area: D;
     }
 }
