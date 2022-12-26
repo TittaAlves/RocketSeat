@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-heading: 'Staatliches', sans-serif;
+    --ff-texting: 'Palanquin', sans-serif;
+
+    --bg-page: #EFF1FF;
+    --bg-primary: #8E9AAF; 
+    --bg-secundary: #CBC0D3;
+
+    --fc-heading: #FFFFFF;
+    --fc-texting: #23053A;
+    --fc-texting-sm: #4A4E69;
+
+    font-size: 62.5%;
+    --fs-body: 1.6rem;
+    --fs-heading: clamp(4rem, 1rem +5vw, 5.6rem);
+    --fs-heading-sm: clamp(3rem, 0.5rem +3vw, 4rem);
+}
+
+body {
+    font-family: var(--ff-texting);
+    background-color: var(--bg-page);
+    color: var(--fc-texting);
+    font-size: var(--fs-body);
+}
+
+.page {
+    max-width: clamp(33rem, 30rem + 60vw, 117rem);
+    padding: 0 5rem;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    margin: 10rem 0 8rem;
+    font-family: var(--ff-heading);
+    text-align: center;
+  
+}
+
+main {
+    display: grid;
+    gap: 3.2rem;
+}
+
+
