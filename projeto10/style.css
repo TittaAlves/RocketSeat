@@ -49,7 +49,6 @@ header {
 }
 
 main {
-    display: grid;
     gap: 3.2rem;
     padding: 3.2rem;
 }
@@ -65,6 +64,13 @@ main {
     width: 13.7rem;
     height: 13.7rem;
 }
+
+.menu p {
+    padding: 0 3.2rem;
+    text-align: center;
+    padding-top: 3.2rem;
+}
+
 
 .name {
     background-color: var(--bg-secundary);
@@ -121,6 +127,10 @@ main {
     animation: topdown 1000ms;
 }
 
+footer, .card:nth-child(5), .card:nth-child(6) {
+    display: none;
+}
+
 @keyframes topdown {
     0% {
         transform: translateY(0px);
@@ -131,3 +141,75 @@ main {
     }
 }
 
+
+@media (min-width: 700px) {
+    body {
+        display: flex;
+    }
+
+    .logo img {
+        width: 21.4rem;
+        height: 21.4rem;
+    }
+
+    .name {
+        font-size: 2.2rem;
+        padding: 3rem;
+    }
+
+    .menu {
+        max-width: 37.7rem;
+        background-color: var(--bg-primary);
+    }
+
+    .menu p {
+        color: var(--fc-heading);
+        padding-top: 0;
+    }
+
+    footer, .card:nth-child(5), .card:nth-child(6) {
+        display: block;
+    }
+
+    footer {
+        text-align: center;
+        margin: 5rem 0;
+    }
+
+    a {
+        color: var(--fc-texting-sm);
+        font-family: var(--ff-heading);
+        font-weight: 400;
+        font-size: 1.4rem;
+    }
+
+    .card h2 {
+        display: none;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-areas: "A B C"
+        "D B F" "D E F";
+    }
+
+    .cards .card:nth-child(1) {
+        grid-area: A;
+    }
+    .cards .card:nth-child(2) {
+        grid-area: B;
+    }
+    .cards .card:nth-child(5) {
+        grid-area: C;
+    }
+    .cards .card:nth-child(4) {
+        grid-area: D ;
+    }
+    .cards .card:nth-child(3) {
+        grid-area: E;
+    }
+    .cards .card:nth-child(4) {
+        grid-area: F ;
+    }
+
+}
