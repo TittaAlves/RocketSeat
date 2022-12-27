@@ -127,7 +127,7 @@ main {
     animation: topdown 1000ms;
 }
 
-footer, .card:nth-child(5), .card:nth-child(6) {
+footer, .card:nth-child(3), .card:nth-child(4) {
     display: none;
 }
 
@@ -142,7 +142,7 @@ footer, .card:nth-child(5), .card:nth-child(6) {
 }
 
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
     body {
         display: flex;
     }
@@ -167,7 +167,7 @@ footer, .card:nth-child(5), .card:nth-child(6) {
         padding-top: 0;
     }
 
-    footer, .card:nth-child(5), .card:nth-child(6) {
+    footer, .card:nth-child(3), .card:nth-child(4) {
         display: block;
     }
 
@@ -197,18 +197,18 @@ footer, .card:nth-child(5), .card:nth-child(6) {
         grid-area: A;
     }
     .cards .card:nth-child(2) {
-        grid-area: B;
+        grid-area: B;  
     }
-    .cards .card:nth-child(5) {
+    .cards .card:nth-child(3) {
         grid-area: C;
     }
     .cards .card:nth-child(4) {
         grid-area: D ;
     }
-    .cards .card:nth-child(3) {
-        grid-area: E;
+    .cards .card:nth-child(5) {
+        grid-area: E; 
     }
-    .cards .card:nth-child(4) {
+    .cards .card:nth-child(6) {
         grid-area: F ;
     }
 
