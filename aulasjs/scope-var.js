@@ -53,3 +53,19 @@ console.log('>existe y antes do bloco?', y) // aqui não funciona
 }
 
 console.log('>existe y depois do bloco?', y)  // aqui não funciona
+
+
+//--------------------------------//
+
+// Variáveis e tipos de dados
+
+
+//Declaração or declaration
+var name
+
+//assigmente or atribuição de valores
+name = "Patrícia"
+
+//Que tipo de dado foi colocado na variável
+console.log(typeof name)
+
