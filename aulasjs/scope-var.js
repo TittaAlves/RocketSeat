@@ -69,3 +69,16 @@ name = "Patrícia"
 //Que tipo de dado foi colocado na variável
 console.log(typeof name)
 
+//agrupamento de declarações
+let age, isHuman
+
+age = 18
+isHuman = true
+
+console.log(name, age, isHuman)
+
+//concatenando os valores
+console.log(' o ' + name + ' tem ' + age + ' anos ' )
+
+//interpolando os valores literals or template strings
+console.log(`o ${name} tem ${age} anos.`)
