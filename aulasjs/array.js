@@ -15,3 +15,15 @@
     2,
     3
    ])
+
+
+   // Array
+
+   const animals = [
+    'Lion',
+    'Monkey',
+    'Cat'
+   ]
+
+   // acessar valores dentro do array
+   console.log(animals{1})
