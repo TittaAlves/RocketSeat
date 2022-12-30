@@ -68,3 +68,53 @@
 
 
 //----------------------------------------------------------------
+
+// //aula Arrow function
+
+// const sayMyName = (name) => {
+//     console.log(name)
+// }
+
+// sayMyName('Patrícia')
+
+// -------------------------------------------------------------
+
+// Aula Callback function
+
+// function sayMyName(name) {
+//     console.log('antes de executar a função callback')
+
+//     name()
+
+//     console.log('depois de executar a callback')
+// }
+
+// sayMyName(
+//     () => {
+//         console.log('estou em uma callback')
+//     }
+// )
+
+// ------------------------------------------------------------
+
+//aula de Funções construtoras
+
+/* Function() constructor
+
+*expressão new
+*criar um novo objeto
+*this keyword
+
+*/
+
+function Person(name) {
+    this.name =  name
+    this.walk = function() {
+        return this.name + 'está andando'
+    }
+}
+
+const roberto = new Person('Roberto')
+const patricia = new Person('Patrícia')
+console.log(roberto.walk())
+console.log(patricia.walk())
